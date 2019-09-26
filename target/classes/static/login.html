@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <script src="script/jquery-3.4.1.min.js"></script>
+    <script src="script/login.js"></script>
+</head>
+<body>
+<form method="post">
+    <div>
+        <h4>Sing In</h4>
+        <input id="username" type="text" placeholder="Username" name="username"/>
+        <input id="password" type="password" placeholder="Password" name="password"/>
+        <button id="submit" type="submit">Sing In</button>
+        <input id="csrf" type="hidden" value="${_csrf.token}">
+    </div>
+    <div>
+        <h5>If you don't have account</h5>
+        <button id="singIn" type="submit">Sing Up</button>
+    </div>
+</form>
+</body>
+</html>
