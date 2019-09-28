@@ -1,10 +1,13 @@
 package com.webb.chat.controller;
 
 import com.webb.chat.dto.request.UserRequest;
+import com.webb.chat.dto.response.AuthenticationResponse;
 import com.webb.chat.dto.response.UserResponse;
 import com.webb.chat.service.impl.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 
 @CrossOrigin
 @RestController
@@ -15,8 +18,13 @@ public class UserController {
     private UserServiceImpl userServiceImpl;
 
     @PostMapping("register")
-    public void register(@RequestBody UserRequest userRequest) {
-        userServiceImpl.create(userRequest);
+    public AuthenticationResponse register(@Valid @RequestBody UserRequest userRequest) {
+        return userServiceImpl.register(userRequest);
+    }
+
+    @PostMapping("login")
+    public AuthenticationResponse login(@Valid @RequestBody UserRequest userRequest) {
+        return userServiceImpl.login(userRequest);
     }
 
     @GetMapping("findByUsername")

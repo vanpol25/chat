@@ -19,8 +19,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/test1.txt", "/script/**", "/swagger-ui.html").permitAll()
-                .antMatchers(HttpMethod.POST, "/user/register").permitAll()
+                .antMatchers(HttpMethod.POST, "/user/register", "/user/login").permitAll()
+                .antMatchers(HttpMethod.GET, "/user/isExists").permitAll()
+                .antMatchers("/test1.txt", "/script/**", "/style/**", "/swagger-ui.html").permitAll()
                 .antMatchers("/register").permitAll()
                 .anyRequest().authenticated()
                 .and()
@@ -29,7 +30,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .logout().permitAll();
     }
 
-
     @Bean
     @Override
     public AuthenticationManager authenticationManagerBean() throws Exception {
@@ -37,10 +37,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Autowired
-    private UserServiceImpl userService;
+    private UserServiceImpl userServiceImpl;
 
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-        auth.userDetailsService(userService);
+        auth.userDetailsService(userServiceImpl);
     }
 }

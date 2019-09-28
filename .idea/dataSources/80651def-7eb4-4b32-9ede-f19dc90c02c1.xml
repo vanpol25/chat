@@ -1112,5 +1112,170 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
+    <table id="279" parent="6" name="messages"/>
+    <table id="280" parent="6" name="rooms"/>
+    <table id="281" parent="6" name="users"/>
+    <table id="282" parent="6" name="users_rooms"/>
+    <column id="283" parent="279" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="284" parent="279" name="date_time">
+      <Position>2</Position>
+      <DataType>datetime(6)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="285" parent="279" name="message">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="286" parent="279" name="room_id">
+      <Position>4</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="287" parent="279" name="user_id">
+      <Position>5</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="288" parent="279" name="FK92hs6y8g4al98ihp4ms6nbxeq">
+      <ColNames>room_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="289" parent="279" name="FKpsmh6clh3csorw43eaodlqvkn">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="290" parent="279" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="291" parent="279" name="FK92hs6y8g4al98ihp4ms6nbxeq">
+      <ColNames>room_id</ColNames>
+      <RefSchemaName>webb</RefSchemaName>
+      <RefTableName>rooms</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="292" parent="279" name="FKpsmh6clh3csorw43eaodlqvkn">
+      <ColNames>user_id</ColNames>
+      <RefSchemaName>webb</RefSchemaName>
+      <RefTableName>users</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="293" parent="280" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="294" parent="280" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="295" parent="280" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="296" parent="281" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="297" parent="281" name="first_name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="298" parent="281" name="password">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="299" parent="281" name="phone_number">
+      <Position>4</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="300" parent="281" name="second_name">
+      <Position>5</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="301" parent="281" name="user_role">
+      <Position>6</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="302" parent="281" name="username">
+      <Position>7</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="303" parent="281" name="UK_9q63snka3mdh91as4io72espi">
+      <ColNames>phone_number</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <index id="304" parent="281" name="UK_r43af9ap4edm43mmtq01oddj6">
+      <ColNames>username</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="305" parent="281" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="306" parent="281" name="UK_9q63snka3mdh91as4io72espi">
+      <ColNames>phone_number</ColNames>
+      <UnderlyingIndexName>UK_9q63snka3mdh91as4io72espi</UnderlyingIndexName>
+    </key>
+    <key id="307" parent="281" name="UK_r43af9ap4edm43mmtq01oddj6">
+      <ColNames>username</ColNames>
+      <UnderlyingIndexName>UK_r43af9ap4edm43mmtq01oddj6</UnderlyingIndexName>
+    </key>
+    <column id="308" parent="282" name="users_id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="309" parent="282" name="rooms_id">
+      <Position>2</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="310" parent="282" name="FK45s44fo7b9t57ws7skl3aj4j5">
+      <ColNames>users_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="311" parent="282" name="FKfc11bapillyupt1ow2tutpfoo">
+      <ColNames>rooms_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <foreign-key id="312" parent="282" name="FK45s44fo7b9t57ws7skl3aj4j5">
+      <ColNames>users_id</ColNames>
+      <RefSchemaName>webb</RefSchemaName>
+      <RefTableName>users</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="313" parent="282" name="FKfc11bapillyupt1ow2tutpfoo">
+      <ColNames>rooms_id</ColNames>
+      <RefSchemaName>webb</RefSchemaName>
+      <RefTableName>rooms</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
   </database-model>
 </dataSource>

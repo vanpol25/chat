@@ -3,19 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Register</title>
-    <script src="script/jquery-3.4.1.min.js"></script>
-    <script src="script/register.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="style/materialize.min.css"  media="screen,projection"/>
+    <link href="style/register.css" rel="stylesheet">
 </head>
 <body>
+
+<div class="header">
     <div>
-        <h4>Sing Up</h4>
-        <input id="username" type="text" placeholder="username"/>
-        <input id="password" type="password" placeholder="password"/>
-        <button id="submit">Sing Up</button>
+        <button id="home">Home</button>
     </div>
-    <div>
-        <h5>If you are already register</h5>
-        <button id="singIn">Sing in</button>
+    <div><h4>Sing Up</h4></div>
+    <div><button class="waves-effect waves-teal btn">Sing in</button></div>
+</div>
+<div class="main">
+    <div class="input-field col s6">
+        <input id="username" type="text" class="validate">
+        <label for="username">Username</label>
     </div>
+    <div class="input-field col s12">
+        <input id="password" type="password" class="validate">
+        <label for="password">Password</label>
+    </div>
+    <div><button id="register" class="btn waves-effect waves-light" type="submit" name="action">Sing Up
+        <i class="material-icons right">send</i>
+    </button></div>
+</div>
+
+<div class="bottom"></div>
+<script src="script/jquery-3.4.1.min.js"></script>
+<script src="script/register.js"></script>
+<script type="text/javascript" src="script/materialize.min.js"></script>
+
 </body>
 </html>

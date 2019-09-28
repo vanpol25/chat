@@ -6,10 +6,11 @@ import com.webb.chat.entity.User;
 import com.webb.chat.entity.UserRole;
 import com.webb.chat.repository.UserRepository;
 import com.webb.chat.security.JwtTool;
-import com.webb.chat.security.UserDetail;
+import com.webb.chat.security.JwtUser;
 import com.webb.chat.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -21,12 +22,18 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 import java.util.List;
+import java.util.logging.Logger;
 
 @Service
 public class UserServiceImpl implements UserDetailsService, UserService {
 
     @Autowired
     private UserRepository userRepository;
+
+    @Bean
+    public BCryptPasswordEncoder bCryptPasswordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
 
     @Autowired
     private BCryptPasswordEncoder bCryptPasswordEncoder;
@@ -50,7 +57,7 @@ public class UserServiceImpl implements UserDetailsService, UserService {
 
     @Override
     public AuthenticationResponse register(UserRequest request) {
-        if (userRepository.existsByUsername(request.getUsername())) {
+        if (existsByUsername(request.getUsername())) {
             throw new BadCredentialsException("User with username " + request.getUsername() + " already exists");
         }
         User user = new User();
@@ -60,11 +67,13 @@ public class UserServiceImpl implements UserDetailsService, UserService {
         user.setFirstName(request.getFirstName());
         user.setSecondName(request.getSecondName());
         user.setPhoneNumber(request.getPhoneNumber());
+        userRepository.save(user);
         return login(request);
     }
 
     @Override
     public AuthenticationResponse login(UserRequest request) {
+        System.out.println("In login method");
         String username = request.getUsername();
         User user = findByUsername(username);
         authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(username, request.getPassword()));
@@ -75,15 +84,17 @@ public class UserServiceImpl implements UserDetailsService, UserService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         User user = userRepository.findByUsername(username).orElseThrow(() -> new UsernameNotFoundException("User with username " + username + "not found!"));
-        return new UserDetail(user);
+        return new JwtUser(user);
     }
 
     @Override
     public boolean existsByUsername(String username) {
-        if (userRepository.existsByUsername(username)) {
-            throw new BadCredentialsException("User with username " + username + " already exists");
-        }
-        return true;
+        return userRepository.existsByUsername(username);
+
+//        if (userRepository.existsByUsername(username)) b = true;
+//        else b = false;
+//        return b;
+
     }
 
     @Override

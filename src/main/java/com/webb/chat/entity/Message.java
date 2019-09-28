@@ -8,6 +8,7 @@ import java.sql.Timestamp;
 @Data
 
 @Entity
+@Table(name = "messages")
 public class Message {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

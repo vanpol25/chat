@@ -3,22 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <script src="script/jquery-3.4.1.min.js"></script>
-    <script src="script/login.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="style/materialize.min.css"  media="screen,projection"/>
+    <link href="style/login.css" rel="stylesheet">
 </head>
 <body>
-<form method="post">
+
+<div class="header">
     <div>
-        <h4>Sing In</h4>
-        <input id="username" type="text" placeholder="Username" name="username"/>
-        <input id="password" type="password" placeholder="Password" name="password"/>
-        <button id="submit" type="submit">Sing In</button>
-        <input id="csrf" type="hidden" value="${_csrf.token}">
+        <button id="home">Home</button>
     </div>
-    <div>
-        <h5>If you don't have account</h5>
-        <button id="singIn" type="submit">Sing Up</button>
+    <div><h4>Sing In</h4></div>
+    <div><button class="waves-effect waves-teal btn">Sing up</button></div>
+</div>
+<div class="main">
+    <div class="input-field col s6">
+        <input id="username" type="text" class="validate">
+        <label for="username">Username</label>
     </div>
-</form>
+    <div class="input-field col s12">
+        <input id="password" type="password" class="validate">
+        <label for="password">Password</label>
+    </div>
+    <div><button id="login" class="btn waves-effect waves-light" type="submit" name="action">Sing In
+        <i class="material-icons right">send</i>
+    </button></div>
+</div>
+
+<div class="bottom"></div>
+<script src="script/jquery-3.4.1.min.js"></script>
+<script src="script/login.js"></script>
+<script type="text/javascript" src="script/materialize.min.js"></script>
+
 </body>
 </html>

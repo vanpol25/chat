@@ -9,6 +9,7 @@ import java.util.List;
 
 @Data
 @Entity
+@Table(name = "users")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,7 +20,6 @@ public class User {
     private String password;
     @Column(name = "user_role")
     private UserRole userRole;
-
     @Column(name = "first_name")
     private String firstName;
     @Column(name = "second_name")

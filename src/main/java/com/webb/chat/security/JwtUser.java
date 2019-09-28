@@ -3,20 +3,24 @@ package com.webb.chat.security;
 import com.webb.chat.entity.User;
 import com.webb.chat.entity.UserRole;
 import lombok.Data;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 @Data
 
-public class UserDetail implements UserDetails {
+public class JwtUser implements UserDetails {
 
+    private Long id;
     private String username;
     private String password;
     private List<UserRole> authorities;
 
-    public UserDetail(User user) {
+    public JwtUser(User user) {
         username = user.getUsername();
         password = user.getPassword();
         authorities = Arrays.asList(user.getUserRole());

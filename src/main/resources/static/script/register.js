@@ -1,5 +1,5 @@
 $(document).ready(() => {
-    $("#submit").click(() => {
+    $("#register").click(() => {
         let request = {
             username: $("#username").val(),
             password: $("#password").val()
