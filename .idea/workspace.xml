@@ -1,70 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/webb/chat/service/impl/RoomServiceImpl.java" line="38" mnemonic="9" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/webb/chat/service/impl/RoomServiceImpl.java" line="37" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73f75feb-2140-47c8-8529-aca9656959fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/controller/RoomController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/script/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/80651def-7eb4-4b32-9ede-f19dc90c02c1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/80651def-7eb4-4b32-9ede-f19dc90c02c1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/response/SimpleUserResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/controller/MessageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/controller/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/controller/RoomController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/request/MessageRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/request/MessageRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/request/PaginationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/request/PaginationRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/request/RoomRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/request/RoomRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/request/UserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/request/UserRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/response/AuthenticationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/response/AuthenticationResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/response/MessageResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/response/MessageResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/response/MessagesResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/response/MessagesResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/response/RoomResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/response/RoomResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/response/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/response/UserResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/entity/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/entity/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/entity/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/entity/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/entity/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/entity/UserRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/repository/MessageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/repository/MessageRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/repository/RoomRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/repository/RoomRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/security/JwtConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/security/JwtConfigurer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/security/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/security/JwtFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/security/JwtTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/security/JwtTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/security/JwtUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/security/JwtUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/service/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/service/MessageService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/service/RoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/service/RoomService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/service/impl/MessageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/service/impl/MessageServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/service/impl/RoomServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/service/impl/RoomServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/webb/chat/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webb/chat/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/script/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/script/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webb/chat/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webb/chat/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webb/chat/controller/MessageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webb/chat/controller/MessageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webb/chat/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webb/chat/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webb/chat/dto/request/MessageRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webb/chat/dto/request/MessageRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webb/chat/dto/request/PaginationRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webb/chat/dto/request/PaginationRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webb/chat/dto/request/UserRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webb/chat/dto/request/UserRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webb/chat/dto/response/MessageResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webb/chat/dto/response/MessageResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webb/chat/dto/response/MessagesResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webb/chat/dto/response/MessagesResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webb/chat/dto/response/RoomResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webb/chat/dto/response/RoomResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webb/chat/dto/response/UserResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webb/chat/dto/response/UserResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webb/chat/entity/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webb/chat/entity/Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webb/chat/entity/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webb/chat/entity/Room.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webb/chat/entity/UserRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webb/chat/entity/UserRole.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webb/chat/repository/MessageRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webb/chat/repository/MessageRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webb/chat/repository/RoomRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webb/chat/repository/RoomRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webb/chat/security/JwtTool.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webb/chat/security/JwtTool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webb/chat/service/MessageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webb/chat/service/MessageService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webb/chat/service/RoomService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webb/chat/service/RoomService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webb/chat/service/impl/MessageServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webb/chat/service/impl/MessageServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webb/chat/service/impl/RoomServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webb/chat/service/impl/RoomServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webb/chat/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webb/chat/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/script/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/script/login.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -106,29 +62,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/dto/response/RoomResponse.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/repository/UserRepository.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/dto/response/UserResponse.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="25" column="93" selection-start-line="25" selection-start-column="93" selection-end-line="25" selection-end-column="93" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="1259">
+              <caret line="99" column="15" selection-start-line="99" selection-start-column="15" selection-end-line="99" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,82 +87,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/dto/request/MessageRequest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+            <state relative-caret-position="255">
+              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/dto/request/PaginationRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="64" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/dto/request/RoomRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/dto/request/UserRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/dto/response/MessageResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/dto/response/MessagesResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/controller/RoomController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#639#640#0" expanded="true" />
-                <element signature="e#693#694#0" expanded="true" />
-                <element signature="e#909#910#0" expanded="true" />
-                <element signature="e#960#961#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -226,8 +106,8 @@
         <option value="Interface" />
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -237,7 +117,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/public/test.html" />
         <option value="$PROJECT_DIR$/src/main/resources/public/text.txt" />
         <option value="$PROJECT_DIR$/src/main/resources/test1.txt" />
         <option value="$PROJECT_DIR$/src/main/resources/test2.txt" />
@@ -253,11 +132,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/security/UserDetail.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/style/main.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/response/AuthenticationResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/response/RoomResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/response/MessagesResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/entity/Room.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/entity/Message.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/request/PaginationRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/Application.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/main.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/script/main.js" />
@@ -268,26 +145,29 @@
         <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/config/SecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/script/login.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/entity/UserRole.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/controller/MessageController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/request/MessageRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/request/UserRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/response/MessageResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/service/impl/MessageServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/service/MessageService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/repository/RoomRepository.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/80651def-7eb4-4b32-9ede-f19dc90c02c1/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/entity/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/repository/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/repository/MessageRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/service/RoomService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/service/impl/RoomServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/controller/RoomController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/request/RoomRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/response/UserResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/request/PaginationRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/request/RoomRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/service/MessageService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/request/MessageRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/service/impl/MessageServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/response/SimpleUserResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/dto/response/RoomResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/repository/RoomRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/controller/RoomController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/controller/MessageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/service/RoomService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/service/impl/RoomServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webb/chat/repository/UserRepository.java" />
       </list>
     </option>
   </component>
@@ -319,11 +199,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -461,6 +340,15 @@
               <item name="chat" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="chat" type="462c0819:PsiDirectoryNode" />
+              <item name="specification" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -503,6 +391,55 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="chat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="chat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.security:spring-security-core:5.1.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="chat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.security:spring-security-core:5.1.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-security-core-5.1.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.security:spring-security-core:5.1.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-security-core-5.1.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.security:spring-security-core:5.1.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-security-core-5.1.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.security:spring-security-core:5.1.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-security-core-5.1.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="userdetails" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.security:spring-security-core:5.1.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-security-core-5.1.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="userdetails" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbc" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -522,7 +459,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570317021131" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570396622834" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ivanlogos" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -620,7 +557,7 @@
       <workItem from="1570113798434" duration="4960000" />
       <workItem from="1570133432604" duration="6617000" />
       <workItem from="1570298922783" duration="13408000" />
-      <workItem from="1570386500367" duration="1695000" />
+      <workItem from="1570386500367" duration="8757000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1569521696558</created>
@@ -636,16 +573,24 @@
       <option name="project" value="LOCAL" />
       <updated>1569700206553</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="working security, res, req">
+      <created>1570388591657</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1570388591657</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153047000" />
+    <option name="totallyTimeSpent" value="160109000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.12100213" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.24835886" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -664,7 +609,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.33260393" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3238512" />
+      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.3238512" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
@@ -675,7 +620,7 @@
       <window_info anchor="right" id="Maven" order="3" weight="0.32881865" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.09168444" />
+      <window_info anchor="right" id="Database" order="6" weight="0.18818381" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
@@ -687,24 +632,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="working security" />
-    <option name="LAST_COMMIT_MESSAGE" value="working security" />
+    <MESSAGE value="working security, res, req" />
+    <option name="LAST_COMMIT_MESSAGE" value="working security, res, req" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://80651def-7eb4-4b32-9ede-f19dc90c02c1/schema/webb/table/user" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.9.RELEASE/spring-web-5.1.9.RELEASE.jar!/org/springframework/http/ResponseEntity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/script/register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.1.10.RELEASE/spring-data-commons-2.1.10.RELEASE.jar!/org/springframework/data/repository/PagingAndSortingRepository.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -820,16 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/security/JwtTool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="69" column="74" selection-start-line="69" selection-start-column="74" selection-end-line="69" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/security/JwtConfigurer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -874,28 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/controller/MessageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="28" column="51" lean-forward="true" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#703#704#0" expanded="true" />
-            <element signature="e#763#764#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/service/MessageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://80651def-7eb4-4b32-9ede-f19dc90c02c1/schema/webb/table/users">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -917,67 +816,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/entity/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/controller/HtmlController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/repository/RoomRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/repository/MessageRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/repository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" column="126" selection-start-line="16" selection-start-column="126" selection-end-line="16" selection-end-column="126" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/service/impl/MessageServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="38" column="65" selection-start-line="38" selection-start-column="65" selection-end-line="38" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="79" selection-start-line="15" selection-start-column="79" selection-end-line="15" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/service/RoomService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+        <state relative-caret-position="238">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -991,101 +833,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/service/impl/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/specification/MessageSpecification.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-466">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/service/impl/RoomServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/security/JwtTool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="50" column="26" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/controller/HtmlController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/controller/RoomController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#639#640#0" expanded="true" />
-            <element signature="e#693#694#0" expanded="true" />
-            <element signature="e#909#910#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/dto/request/MessageRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/dto/request/PaginationRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="64" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/dto/request/RoomRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/dto/request/UserRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/dto/response/MessageResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        <state relative-caret-position="677">
+          <caret line="70" column="79" selection-start-line="70" selection-start-column="68" selection-end-line="70" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1099,17 +857,212 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/dto/response/UserResponse.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/dto/response/MessageResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" column="93" selection-start-line="25" selection-start-column="93" selection-end-line="25" selection-end-column="93" />
+        <state relative-caret-position="340">
+          <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/dto/response/SimpleUserResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/dto/response/RoomResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+          <caret line="21" column="68" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/service/MessageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="50" lean-forward="true" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/dto/response/UserResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/dto/request/PaginationRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/dto/request/MessageRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/service/RoomService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/service/impl/MessageServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="43" column="69" lean-forward="true" selection-start-line="43" selection-start-column="69" selection-end-line="43" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/dto/request/UserRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/controller/RoomController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="32" column="19" lean-forward="true" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/controller/MessageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="35" column="40" lean-forward="true" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/dto/request/RoomRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/service/impl/RoomServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="31" column="105" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="105" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/repository/RoomRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/repository/MessageRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.1.10.RELEASE/spring-data-commons-2.1.10.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webb/chat/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1259">
+          <caret line="99" column="15" selection-start-line="99" selection-start-column="15" selection-end-line="99" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

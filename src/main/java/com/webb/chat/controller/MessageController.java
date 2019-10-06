@@ -7,6 +7,7 @@ import com.webb.chat.dto.response.MessagesResponse;
 import com.webb.chat.service.impl.MessageServiceImpl;
 import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -24,14 +25,15 @@ public class MessageController {
         this.messageServiceImpl = messageServiceImpl;
     }
 
+    @PreAuthorize("principal==request.sender")
     @PostMapping
-    public void create(Principal principal, @Valid @RequestBody MessageRequest request) {
-        messageServiceImpl.create(principal, request);
+    public void create(@Valid @RequestBody MessageRequest request) {
+        messageServiceImpl.create(request);
     }
 
     @GetMapping
-    public MessagesResponse<MessageResponse> findAllByRoomId(Long roomId, @Valid @RequestBody PaginationRequest paginationRequest) {
-        return messageServiceImpl.getMessages(roomId, paginationRequest);
+    public MessagesResponse<MessageResponse> findAllByRoomId(@Valid @RequestBody PaginationRequest paginationRequest) {
+        return messageServiceImpl.getMessages(paginationRequest);
     }
 
 }

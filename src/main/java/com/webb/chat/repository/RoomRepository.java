@@ -12,7 +12,7 @@ import java.util.List;
 @Repository
 public interface RoomRepository extends JpaRepository<Room, Long> {
 
-    @Query("from Room r join r.users u where u.id=:id")
-    List<Room> findRoomsByUserId(@Param(value = "id") Long id);
+    @Query("from Room r join r.users u where u.username=:username")
+    List<Room> findRoomsByUserUsername(@Param("username") String username);
 
 }

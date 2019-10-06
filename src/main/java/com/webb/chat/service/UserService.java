@@ -5,6 +5,7 @@ import com.webb.chat.dto.response.AuthenticationResponse;
 import com.webb.chat.entity.User;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface UserService {
 

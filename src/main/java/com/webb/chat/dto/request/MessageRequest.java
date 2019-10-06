@@ -8,9 +8,12 @@ import javax.validation.constraints.NotNull;
 
 public class MessageRequest {
 
+    private Long id;
     @NotNull
     private String content;
     @NotNull
-    private Long room;
+    private Long roomId;
+    @NotNull
+    private String sender;
 
 }

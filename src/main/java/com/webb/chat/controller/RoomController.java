@@ -24,8 +24,13 @@ public class RoomController {
     }
     
     @PostMapping
-    public void create(Principal principal, @Valid @RequestBody RoomRequest request) {
-        roomServiceImpl.create(principal, request);
+    public void create(@Valid @RequestBody RoomRequest request) {
+        roomServiceImpl.create(request);
+    }
+
+    @GetMapping
+    public List<RoomResponse> findRooms(Principal principal) {
+        return roomServiceImpl.findRoomsByUserUsername(principal.getName());
     }
 
     @PutMapping("updateName")

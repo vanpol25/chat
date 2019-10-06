@@ -10,7 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityNotFoundException;
-import java.security.Principal;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -28,17 +27,17 @@ public class RoomServiceImpl implements RoomService {
     }
 
     @Override
-    public void create(Principal principal, RoomRequest request) {
+    public void create(RoomRequest request) {
         Room room = new Room();
-        room.setUsers(userService.findAllByUsernames(principal.getName(), request.getUsername()));
-        room.setName(request.getName());
+        room.setUsers(userService.findAllByUsernames(request.getMyUsername(), request.getFriendUsername()));
+        room.setName(request.getRoomName());
         save(room);
     }
 
     @Override
     public void addAndRemoveUserInRoom(RoomRequest request) {
         Room room = findById(request.getId());
-        User user = userService.findByUsername(request.getUsername());
+        User user = userService.findByUsername(request.getFriendUsername());
         if (!isExistInRoom(room, user)) {
             room.getUsers().add(user);
         } else {
@@ -50,7 +49,7 @@ public class RoomServiceImpl implements RoomService {
     @Override
     public void updateName(RoomRequest request) {
         Room room = findById(request.getId());
-        room.setName(request.getName());
+        room.setName(request.getRoomName());
         save(room);
     }
 
@@ -68,8 +67,8 @@ public class RoomServiceImpl implements RoomService {
     }
 
     @Override
-    public List<RoomResponse> findRoomsByUserId(Long userId) {
-        return roomRepository.findRoomsByUserId(userId)
+    public List<RoomResponse> findRoomsByUserUsername(String username) {
+        return roomRepository.findRoomsByUserUsername(username)
                 .stream()
                 .map(RoomResponse::new)
                 .collect(Collectors.toList());

@@ -36,11 +36,11 @@ public class UserServiceImpl implements UserDetailsService, UserService {
     @Autowired
     private UserRepository userRepository;
     @Autowired
-    private  BCryptPasswordEncoder bCryptPasswordEncoder;
+    private BCryptPasswordEncoder bCryptPasswordEncoder;
     @Autowired
     private JwtTool jwtTool;
     @Autowired
-    private  AuthenticationManager authenticationManager;
+    private AuthenticationManager authenticationManager;
 
 
     @PostConstruct
@@ -72,7 +72,6 @@ public class UserServiceImpl implements UserDetailsService, UserService {
 
     @Override
     public AuthenticationResponse login(UserRequest request) {
-        System.out.println("In login method");
         String username = request.getUsername();
         User user = findByUsername(username);
         authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(username, request.getPassword()));
@@ -88,7 +87,7 @@ public class UserServiceImpl implements UserDetailsService, UserService {
 
     @Override
     public boolean existsByUsername(String username) {
-        return userRepository.existsByUsername(username);
+        return userRepository.existsByUsernameContaining(username);
     }
 
     @Override

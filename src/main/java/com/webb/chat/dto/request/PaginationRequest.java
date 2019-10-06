@@ -16,6 +16,7 @@ public class PaginationRequest {
     @NotNull
     private Integer page;
     private Long room;
+    private MessageRequest request;
 
     private Sort sort = new Sort(Sort.Direction.DESC, "date_time");
 

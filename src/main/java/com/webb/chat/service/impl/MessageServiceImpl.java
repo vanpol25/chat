@@ -11,7 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 
-import java.security.Principal;
 import java.util.Date;
 import java.util.stream.Collectors;
 
@@ -32,18 +31,18 @@ public class MessageServiceImpl implements MessageService {
     }
 
     @Override
-    public void create(Principal principal, MessageRequest request) {
+    public void create(MessageRequest request) {
         Message message = new Message();
         message.setContent(request.getContent());
-        message.setRoom(roomService.findById(request.getRoom()));
-        message.setUser(userService.findByUsername(principal.getName()));
+        message.setRoom(roomService.findById(request.getRoomId()));
+        message.setUser(userService.findByUsername(request.getSender()));
         message.setDateTime(new Date());
         messageRepository.save(message);
     }
 
     @Override
-    public MessagesResponse<MessageResponse> getMessages(Long roomId, PaginationRequest request) {
-        Page<Message> messages = messageRepository.findAllByRoomId(roomId, request.toPageable());
+    public MessagesResponse<MessageResponse> getMessages(PaginationRequest request) {
+        Page<Message> messages = messageRepository.findAllByRoomId(request.getRequest().getRoomId(), request.toPageable());
         return new MessagesResponse<>(
                 messages.getTotalPages(),
                 messages.getTotalElements(),

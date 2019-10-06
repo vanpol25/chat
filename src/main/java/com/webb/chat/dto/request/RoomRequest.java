@@ -10,7 +10,8 @@ public class RoomRequest {
 
     @NotNull
     private Long id;
-    private String name;
-    private String username;
+    private String RoomName;
+    private String myUsername;
+    private String friendUsername;
 
 }
