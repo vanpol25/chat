@@ -1,20 +1,24 @@
 package com.webb.chat.dto.response;
 
 import com.webb.chat.entity.Message;
-import com.webb.chat.entity.User;
+import lombok.Data;
 
-import java.sql.Timestamp;
+import java.util.Date;
+
+@Data
 
 public class MessageResponse {
 
-    private String text;
-    private Timestamp dateTime;
-    private User user;
+    private Long id;
+    private String content;
+    private Date dateTime;
+    private UserResponse userResponse;
 
     public MessageResponse(Message message) {
-        text = message.getText();
+        id = message.getId();
+        content = message.getContent();
         dateTime = message.getDateTime();
-        user = message.getUser();
+        userResponse = new UserResponse(message.getUser());
     }
 
 }

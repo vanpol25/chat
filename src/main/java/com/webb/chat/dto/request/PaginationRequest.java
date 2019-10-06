@@ -11,18 +11,16 @@ import javax.validation.constraints.NotNull;
 
 public class PaginationRequest {
 
-    private final static Integer NUMBER_OF_MESSAGES_TO_LOAD = 20;
+    private final static Integer NUMBER_OF_MESSAGES_TO_LOAD = 50;
 
     @NotNull
     private Integer page;
     private Long room;
 
-    public Integer getSize() {
-        return NUMBER_OF_MESSAGES_TO_LOAD;
-    }
+    private Sort sort = new Sort(Sort.Direction.DESC, "date_time");
 
     public Pageable toPageable() {
-        return PageRequest.of(page, NUMBER_OF_MESSAGES_TO_LOAD, Sort.Direction.DESC, "id");
+        return PageRequest.of(page, NUMBER_OF_MESSAGES_TO_LOAD, sort);
     }
 
 }

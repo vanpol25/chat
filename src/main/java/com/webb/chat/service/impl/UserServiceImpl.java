@@ -2,15 +2,17 @@ package com.webb.chat.service.impl;
 
 import com.webb.chat.dto.request.UserRequest;
 import com.webb.chat.dto.response.AuthenticationResponse;
+import com.webb.chat.dto.response.RoomResponse;
+import com.webb.chat.entity.Room;
 import com.webb.chat.entity.User;
 import com.webb.chat.entity.UserRole;
+import com.webb.chat.repository.RoomRepository;
 import com.webb.chat.repository.UserRepository;
 import com.webb.chat.security.JwtTool;
 import com.webb.chat.security.JwtUser;
 import com.webb.chat.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
-import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -22,13 +24,9 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 import java.util.List;
-import java.util.logging.Logger;
 
 @Service
 public class UserServiceImpl implements UserDetailsService, UserService {
-
-    @Autowired
-    private UserRepository userRepository;
 
     @Bean
     public BCryptPasswordEncoder bCryptPasswordEncoder() {
@@ -36,21 +34,22 @@ public class UserServiceImpl implements UserDetailsService, UserService {
     }
 
     @Autowired
-    private BCryptPasswordEncoder bCryptPasswordEncoder;
-
+    private UserRepository userRepository;
+    @Autowired
+    private  BCryptPasswordEncoder bCryptPasswordEncoder;
     @Autowired
     private JwtTool jwtTool;
-
     @Autowired
-    private AuthenticationManager authenticationManager;
+    private  AuthenticationManager authenticationManager;
+
 
     @PostConstruct
     public void init() {
-        if (!userRepository.findByUsername("user").isPresent()) {
+        if (!userRepository.findByUsername("1").isPresent()) {
             User user = new User();
-            user.setUsername("user");
-            user.setPassword(bCryptPasswordEncoder.encode("password"));
-            user.setUserRole(UserRole.USER_ROLE);
+            user.setUsername("1");
+            user.setPassword(bCryptPasswordEncoder.encode("1"));
+            user.setUserRole(UserRole.ROLE_USER);
             userRepository.save(user);
         }
     }
@@ -63,7 +62,7 @@ public class UserServiceImpl implements UserDetailsService, UserService {
         User user = new User();
         user.setUsername(request.getUsername());
         user.setPassword(bCryptPasswordEncoder.encode(request.getPassword()));
-        user.setUserRole(UserRole.USER_ROLE);
+        user.setUserRole(UserRole.ROLE_USER);
         user.setFirstName(request.getFirstName());
         user.setSecondName(request.getSecondName());
         user.setPhoneNumber(request.getPhoneNumber());
@@ -83,18 +82,13 @@ public class UserServiceImpl implements UserDetailsService, UserService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        User user = userRepository.findByUsername(username).orElseThrow(() -> new UsernameNotFoundException("User with username " + username + "not found!"));
+        User user = findByUsername(username);
         return new JwtUser(user);
     }
 
     @Override
     public boolean existsByUsername(String username) {
         return userRepository.existsByUsername(username);
-
-//        if (userRepository.existsByUsername(username)) b = true;
-//        else b = false;
-//        return b;
-
     }
 
     @Override
@@ -108,7 +102,8 @@ public class UserServiceImpl implements UserDetailsService, UserService {
     }
 
     @Override
-    public List<User> findAllById(List<Long> id) {
-        return userRepository.findAllById(id);
+    public List<User> findAllByUsernames(String firstUsername, String secondUsername) {
+        return userRepository.findAllByUsernames(firstUsername, secondUsername);
     }
+
 }

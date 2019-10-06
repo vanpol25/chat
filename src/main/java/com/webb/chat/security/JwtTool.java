@@ -49,7 +49,6 @@ public class JwtTool {
                 setExpiration(validity).
                 signWith(SignatureAlgorithm.HS256, key).
                 compact();
-
     }
 
     public boolean isTokenValid(String token) {
@@ -59,7 +58,6 @@ public class JwtTool {
 
     public String getTokenByBody(HttpServletRequest servletRequest) {
         String token = servletRequest.getHeader("Authorization");
-
         if (token != null && token.startsWith("Bearer ")) {
             token = token.substring(7);
         } else {
@@ -70,7 +68,7 @@ public class JwtTool {
 
     public Authentication getAuthentication(String token) {
         UserDetails userDetails = userService.loadUserByUsername(getUsername(token));
-        return new UsernamePasswordAuthenticationToken(userDetails.getUsername(), userDetails.getPassword());
+        return new UsernamePasswordAuthenticationToken(userDetails.getUsername(), userDetails.getPassword(), userDetails.getAuthorities());
     }
 
     public String getUsername(String token) {

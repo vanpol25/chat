@@ -2,12 +2,15 @@ package com.webb.chat.dto.request;
 
 import lombok.Data;
 
+import javax.validation.constraints.NotNull;
+
 @Data
 
 public class MessageRequest {
 
-    private String text;
+    @NotNull
+    private String content;
+    @NotNull
     private Long room;
-    private Long user;
 
 }

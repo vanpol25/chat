@@ -26,7 +26,6 @@ public class User {
     private String secondName;
     @Column(name = "phone_number", unique = true)
     private Integer phoneNumber;
-
     @OneToMany(mappedBy = "user")
     private List<Message> messages = new ArrayList<>();
     @ManyToMany

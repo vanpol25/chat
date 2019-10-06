@@ -1123,14 +1123,14 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="284" parent="279" name="date_time">
+    <column id="284" parent="279" name="content">
       <Position>2</Position>
-      <DataType>datetime(6)|0s</DataType>
+      <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="285" parent="279" name="message">
+    <column id="285" parent="279" name="date_time">
       <Position>3</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>datetime(6)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="286" parent="279" name="room_id">
@@ -1180,98 +1180,103 @@
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="295" parent="280" name="PRIMARY">
+    <column id="295" parent="280" name="updated">
+      <Position>3</Position>
+      <DataType>datetime(6)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="296" parent="280" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="296" parent="281" name="id">
+    <column id="297" parent="281" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="297" parent="281" name="first_name">
+    <column id="298" parent="281" name="first_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="298" parent="281" name="password">
+    <column id="299" parent="281" name="password">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="299" parent="281" name="phone_number">
+    <column id="300" parent="281" name="phone_number">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="300" parent="281" name="second_name">
+    <column id="301" parent="281" name="second_name">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="301" parent="281" name="user_role">
+    <column id="302" parent="281" name="user_role">
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="302" parent="281" name="username">
+    <column id="303" parent="281" name="username">
       <Position>7</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="303" parent="281" name="UK_9q63snka3mdh91as4io72espi">
+    <index id="304" parent="281" name="UK_9q63snka3mdh91as4io72espi">
       <ColNames>phone_number</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="304" parent="281" name="UK_r43af9ap4edm43mmtq01oddj6">
+    <index id="305" parent="281" name="UK_r43af9ap4edm43mmtq01oddj6">
       <ColNames>username</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="305" parent="281" name="PRIMARY">
+    <key id="306" parent="281" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="306" parent="281" name="UK_9q63snka3mdh91as4io72espi">
+    <key id="307" parent="281" name="UK_9q63snka3mdh91as4io72espi">
       <ColNames>phone_number</ColNames>
       <UnderlyingIndexName>UK_9q63snka3mdh91as4io72espi</UnderlyingIndexName>
     </key>
-    <key id="307" parent="281" name="UK_r43af9ap4edm43mmtq01oddj6">
+    <key id="308" parent="281" name="UK_r43af9ap4edm43mmtq01oddj6">
       <ColNames>username</ColNames>
       <UnderlyingIndexName>UK_r43af9ap4edm43mmtq01oddj6</UnderlyingIndexName>
     </key>
-    <column id="308" parent="282" name="users_id">
+    <column id="309" parent="282" name="users_id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="309" parent="282" name="rooms_id">
+    <column id="310" parent="282" name="rooms_id">
       <Position>2</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="310" parent="282" name="FK45s44fo7b9t57ws7skl3aj4j5">
+    <index id="311" parent="282" name="FK45s44fo7b9t57ws7skl3aj4j5">
       <ColNames>users_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="311" parent="282" name="FKfc11bapillyupt1ow2tutpfoo">
+    <index id="312" parent="282" name="FKfc11bapillyupt1ow2tutpfoo">
       <ColNames>rooms_id</ColNames>
       <Type>btree</Type>
     </index>
-    <foreign-key id="312" parent="282" name="FK45s44fo7b9t57ws7skl3aj4j5">
+    <foreign-key id="313" parent="282" name="FK45s44fo7b9t57ws7skl3aj4j5">
       <ColNames>users_id</ColNames>
       <RefSchemaName>webb</RefSchemaName>
       <RefTableName>users</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="313" parent="282" name="FKfc11bapillyupt1ow2tutpfoo">
+    <foreign-key id="314" parent="282" name="FKfc11bapillyupt1ow2tutpfoo">
       <ColNames>rooms_id</ColNames>
       <RefSchemaName>webb</RefSchemaName>
       <RefTableName>rooms</RefTableName>

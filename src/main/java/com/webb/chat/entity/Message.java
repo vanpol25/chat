@@ -3,7 +3,7 @@ package com.webb.chat.entity;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.sql.Timestamp;
+import java.util.Date;
 
 @Data
 
@@ -14,11 +14,11 @@ public class Message {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "message")
-    private String text;
+    @Column(name = "content")
+    private String content;
 
     @Column(name = "date_time")
-    private Timestamp dateTime;
+    private Date dateTime;
 
     @ManyToOne
     private Room room;

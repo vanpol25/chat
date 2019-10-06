@@ -1,9 +1,12 @@
 package com.webb.chat.dto.response;
 
 import com.webb.chat.entity.Room;
+import lombok.Data;
 
 import java.util.List;
 import java.util.stream.Collectors;
+
+@Data
 
 public class RoomResponse {
 

@@ -13,6 +13,6 @@ public interface UserService {
     boolean existsByUsername(String username);
     User findByUsername(String username);
     User findById(Long id);
-    List<User> findAllById(List<Long> id);
+    List<User> findAllByUsernames(String firstUsername, String secondUsername);
 
 }

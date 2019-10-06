@@ -15,7 +15,6 @@ public class UserResponse {
     private String firstName;
     private String secondName;
     private Integer phoneNumber;
-    private List<MessageResponse> messages;
     private List<RoomResponse> rooms;
 
     public UserResponse(User user) {
@@ -26,4 +25,5 @@ public class UserResponse {
         phoneNumber = user.getPhoneNumber();
         rooms = user.getRooms().stream().map(RoomResponse::new).collect(Collectors.toList());
     }
+
 }

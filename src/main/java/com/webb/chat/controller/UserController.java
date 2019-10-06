@@ -5,17 +5,24 @@ import com.webb.chat.dto.response.AuthenticationResponse;
 import com.webb.chat.dto.response.UserResponse;
 import com.webb.chat.service.impl.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.security.Principal;
 
 @CrossOrigin
 @RestController
 @RequestMapping("user")
+@Controller
 public class UserController {
 
+    private final UserServiceImpl userServiceImpl;
+
     @Autowired
-    private UserServiceImpl userServiceImpl;
+    public UserController(UserServiceImpl userServiceImpl) {
+        this.userServiceImpl = userServiceImpl;
+    }
 
     @PostMapping("register")
     public AuthenticationResponse register(@Valid @RequestBody UserRequest userRequest) {
@@ -28,18 +35,20 @@ public class UserController {
     }
 
     @GetMapping("findByUsername")
-    public UserResponse findByUsername(String username) {
-        return new UserResponse(userServiceImpl.findByUsername(username));
-    }
-
-    @GetMapping("findById")
-    public UserResponse findById(Long id) {
-        return new UserResponse(userServiceImpl.findById(id));
+    public UserResponse findByUsername(Principal username) {
+        return new UserResponse(userServiceImpl.findByUsername(username.getName()));
     }
 
     @GetMapping("isExists")
-    public boolean existsByUsername(String username) {
-        return userServiceImpl.existsByUsername(username);
+    public boolean existsByUsername(Principal username) {
+        return userServiceImpl.existsByUsername(username.getName());
+    }
+
+    @GetMapping("getName")
+    public String getName(Principal principal) {
+        String name = principal.getName();
+        System.out.println("Principal - " + name);
+        return name;
     }
 
 }

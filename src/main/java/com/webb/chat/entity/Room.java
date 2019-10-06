@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Data
@@ -17,6 +18,9 @@ public class Room {
 
     @Column(name = "name")
     private String name;
+
+    @Column(name = "updated")
+    private Date updated;
 
     @ManyToMany(mappedBy = "rooms")
     private List<User> users = new ArrayList<>();
