@@ -49,4 +49,9 @@ public class MessageServiceImpl implements MessageService {
                 messages.get().map(MessageResponse::new).collect(Collectors.toList()));
     }
 
+    //delete this after testing
+    private boolean getBoolean() {
+        return true;
+    }
+
 }
