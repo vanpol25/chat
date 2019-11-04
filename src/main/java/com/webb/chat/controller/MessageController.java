@@ -25,7 +25,7 @@ public class MessageController {
         this.messageServiceImpl = messageServiceImpl;
     }
 
-    @PreAuthorize("principal==request.sender")
+    @PreAuthorize("authentication.principal==#request.sender")
     @PostMapping
     public void create(@Valid @RequestBody MessageRequest request) {
         messageServiceImpl.create(request);
